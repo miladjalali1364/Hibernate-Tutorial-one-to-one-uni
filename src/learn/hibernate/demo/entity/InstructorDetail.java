@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "instructor_detail")
+@Table(name = "instructor_detail")  //map to specific table in db
 public class InstructorDetail {
 	
 	// annotate the class as an entity and map to db table
@@ -24,9 +24,9 @@ public class InstructorDetail {
 	
 	//generate toString() method
 	
-	@Id
+	@Id //Annotate for pk
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id")
+	@Column(name = "id") //name column table
 	private int id;
 	
 	@Column(name = "youtube_channel")
